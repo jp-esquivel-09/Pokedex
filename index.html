@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéAPI - Buscador de Pokémon</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔍 POKEDEX CR 🔍</h1>
+        </header>
+
+        <main>
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="pokemon-input" 
+                    placeholder="Ingrese nombre o número del pokemon"
+                >
+                <button id="search-btn">Buscar</button>
+            </div>
+
+            <!-- Historial de búsquedas -->
+            <div id="history-container" class="history-container">
+                <h3>📜 Últimas búsquedas</h3>
+                <div id="history-list" class="history-list">
+                    <!-- Contenedor para el historial -->
+                </div>
+            </div>
+
+            <div id="result-container" class="result-container hidden">
+                <!-- Contenedor para los pokemones -->
+            </div>
+
+            <div id="error-container" class="error-container hidden">
+                <!-- Contenedor para los errores -->
+            </div>
+
+        </main>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
